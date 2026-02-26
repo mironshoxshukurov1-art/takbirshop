@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 import en from "./localization/en/global.json";
 import uz from "./localization/uz/global.json";
 
-
+// const hjsdhj
 const resources = {
   en: {
     translation: en
