@@ -1,16 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from "./localization/en/global.json";
-import uz from "./localization/uz/global.json";
-
+import en from "/public/localization/en/global.json";
+import uz from "/public/localization/uz/global.json";
 
 const resources = {
   en: {
-    translation: en
-  }, 
+    translation: en,
+  },
   uz: {
-    translation: uz
-  }
+    translation: uz,
+  },
 };
 
 i18n.use(initReactI18next).init({

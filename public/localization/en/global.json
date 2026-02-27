@@ -1,3 +1,40 @@
 {
-    "translation": "Welcome to React and react-i18next"
+  "topbar": {
+    "contact_center": "Contact Center"
+  },
+  "navbar": {
+    "categories": "Categories",
+    "search": "Search Products",
+    "profile": "Profile",
+    "orders": "My Orders",
+    "cart": "Cart",
+    "login": "Login"
+  },
+  "categories": {
+    "payment": "Payment",
+    "cart": "Cart",
+    "contact": "Contact",
+    "profile": "Profile",
+    "about": "About",
+    "signup": "Sign Up"
+  },
+  "bottom": {
+    "home": "Home",
+    "favorite": "Favorites",
+    "cart": "Cart",
+    "profile": "Profile"
+  },
+  "footer": {
+    "support_number": "Support Number",
+    "info": "Information",
+    "about": "About Us",
+    "jobs": "Vacancies",
+    "refund": "Exchange and Refund",
+    "help": "Help",
+    "bonus": "Bonuses",
+    "promo": "Promotions",
+    "service": "Service Centers",
+    "public_offer": "Public Offer",
+    "privacy": "Privacy Policy"
+  }
 }

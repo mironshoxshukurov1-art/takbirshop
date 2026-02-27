@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { FaStar, FaArrowRight, FaEnvelope } from "react-icons/fa";
+import { FaTrophy,  FaShippingFast, FaFire, FaCertificate } from "react-icons/fa";
 import {
   FiTruck,
   FiShield,
@@ -65,18 +66,28 @@ export default function Home() {
     setEmail("");
   };
 
- 
-  const marqueeItems = [
-    "Yangi kolleksiya",
-    "Bepul yetkazish",
-    "🔥 Chegirmalar",
-    "Premium sifat",
-    "Tez yetkazib berish",
-    "1 yil kafolat",
-    "500+ mahsulot",
-    "⭐ Top brendlar",
-    "30 kun qaytarish",
-  ];
+
+const marqueeItems = [
+  <span className="flex items-center gap-1">
+    <FaStar className="text-blue-500" /> Yangi kolleksiya
+  </span>,
+  <span className="flex items-center gap-1">
+    <FaShippingFast className="text-green-500" /> Bepul yetkazish
+  </span>,
+  <span className="flex items-center gap-1">
+    🔥 Chegirmalar
+  </span>,
+  <span className="flex items-center gap-1">
+    <FaCertificate className="text-purple-500" /> Premium sifat
+  </span>,
+  "Tez yetkazib berish",
+  "1 yil kafolat",
+  "500+ mahsulot",
+  <span className="flex items-center gap-1">
+    <FaTrophy className="text-yellow-400" /> Top brendlar
+  </span>,
+  "30 kun qaytarish",
+];
 
   return (
     <div className="min-h-screen" style={{ background: "#f4f3f0" }}>
