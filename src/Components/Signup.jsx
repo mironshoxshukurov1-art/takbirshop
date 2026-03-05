@@ -3,6 +3,7 @@ import { FiChevronRight, FiEye, FiEyeOff } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 export default function SignUp() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', password: '', confirm: '' })
@@ -221,7 +222,7 @@ export default function SignUp() {
                   <span>🇬</span> Google
                 </button>
                 <button className="flex items-center justify-center gap-2 border border-white/8 bg-[#0d0c0a] py-3 text-xs text-gray-400 hover:border-white/20 hover:text-white transition-all">
-                  <span>✈️</span> Telegram
+                  <span> <FaTelegramPlane /></span> Telegram
                 </button>
               </div>
 
@@ -265,6 +266,9 @@ export default function SignUp() {
           </div>
 
         </div>
+
+
+        
       </div>
       <Footer />
     </>

@@ -5,10 +5,13 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import "./i18n";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+ <StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider> {/* Wrap your app */}
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
 );

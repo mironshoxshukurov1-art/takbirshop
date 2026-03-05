@@ -59,7 +59,6 @@ export default function Profil() {
 
   return (
     <div className="min-h-screen bg-gray-50 p-6 md:p-10">
-      {/* Breadcrumb */}
       <div className="flex items-center gap-1 text-xs text-gray-400 mb-4">
         <Link to={'/'}>
           <span className="hover:text-gray-600 cursor-pointer">Home</span>
@@ -71,7 +70,6 @@ export default function Profil() {
       <h1 className="text-2xl font-bold text-gray-900 mb-6">My Account</h1>
 
       <div className="flex gap-6 items-start">
-        {/* Sidebar */}
         <div className="w-52 shrink-0 bg-white rounded-2xl border border-gray-100 shadow-sm p-2">
           {navItems.map(({ id, label, icon: Icon }) => (
             <button
@@ -89,13 +87,11 @@ export default function Profil() {
           ))}
         </div>
 
-        {/* Main */}
         <div className="flex-1 bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
           <h2 className="text-lg font-semibold text-gray-900 mb-6">
             Personal Information
           </h2>
 
-          {/* Avatar */}
           <div className="flex items-center gap-4 mb-8">
             <div
               onClick={() => fileRef.current.click()}
@@ -139,7 +135,6 @@ export default function Profil() {
             )}
           </div>
 
-          {/* Form */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <Field
               label="First Name"
@@ -175,7 +170,6 @@ export default function Profil() {
               required
             />
 
-            {/* Date of Birth */}
             <div className="md:col-span-2">
               <label className="block text-sm font-medium text-gray-700 mb-1.5">
                 Date of Birth <span className="text-rose-400">*</span>
@@ -195,7 +189,6 @@ export default function Profil() {
               </div>
             </div>
 
-            {/* Country */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1.5">
                 Country <span className="text-rose-400">*</span>
@@ -240,7 +233,6 @@ export default function Profil() {
               required
             />
 
-            {/* Address */}
             <div className="md:col-span-2">
               <Field
                 label="Address"
@@ -253,7 +245,6 @@ export default function Profil() {
             </div>
           </div>
 
-          {/* Save */}
           <div className="flex justify-end mt-8">
             <button
               onClick={handleSave}

@@ -10,7 +10,6 @@ import { BsCheckCircleFill } from "react-icons/bs";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-// ── Yulduz komponenti ─────────────────────────────────────────────
 function Stars({ rating, size = 13 }) {
   return (
     <div className="flex items-center gap-0.5">
@@ -75,7 +74,6 @@ export default function ProductDetail() {
         const rel = await axios.get(
           `https://dummyjson.com/products/category/${r.data.category}?limit=5`
         );
-        // O'zini chiqarmaslik
         setRelated(rel.data.products.filter(p => p.id !== r.data.id).slice(0, 4));
       })
       .catch(() => setError("Mahsulot topilmadi"))

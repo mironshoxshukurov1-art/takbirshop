@@ -3,12 +3,14 @@ import { FiChevronRight } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import { FaRegCreditCard, FaRegIdCard } from 'react-icons/fa'
+import { SiContactlesspayment } from 'react-icons/si'
 
 const paymentMethods = [
   { id: 'click', name: 'Click', color: '#00AAFF', icon: '💙' },
-  { id: 'payme', name: 'Payme', color: '#00C27C', icon: '💚' },
-  { id: 'uzcard', name: 'Uzcard', color: '#F5A623', icon: '🟡' },
-  { id: 'card', name: 'Karta (Visa/MC)', color: '#ffffff', icon: '💳' },
+  { id: 'payme', name: 'Payme', color: '#00C27C', icon: <SiContactlesspayment /> },
+  { id: 'uzcard', name: 'Uzcard', color: '#F5A623', icon: <FaRegIdCard /> },
+  { id: 'card', name: 'Karta (Visa/MC)', color: '#ffffff', icon: <FaRegCreditCard /> },
 ]
 
 const cartItems = [

@@ -14,7 +14,7 @@ import {
   FiChevronRight,
 } from "react-icons/fi";
 import toast, { Toaster } from "react-hot-toast";
-import { MdOutlineStarRate } from "react-icons/md";
+import { MdDiscount, MdOutlineStarRate } from "react-icons/md";
 
 const PAGE_SIZE = 12;
 
@@ -75,7 +75,7 @@ const marqueeItems = [
     <FaShippingFast className="text-green-500" /> Bepul yetkazish
   </span>,
   <span className="flex items-center gap-1">
-    🔥 Chegirmalar
+    <MdDiscount /> Chegirmalar
   </span>,
   <span className="flex items-center gap-1">
     <FaCertificate className="text-purple-500" /> Premium sifat
@@ -399,8 +399,8 @@ const marqueeItems = [
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div>
             <div className="flex items-center justify-between mb-4">
-              <h2 className="syne text-lg font-700 text-gray-800">
-                🔥 Chegirmalar
+              <h2 className="syne text-lg flex pl-5 font-700 text-gray-800">
+                <MdDiscount /> Chegirmalar
               </h2>
               <Link
                 to="/cart"
