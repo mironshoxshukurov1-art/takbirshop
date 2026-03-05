@@ -14,11 +14,23 @@ import SignUp from "./Components/Signup";
 import ProductDetail from "./ProductDetail";
 import Xaridlarim from "./Components/Xaridlarim";
 import Savatcha from "./Components/Savatcha";
+
+import AdminLayout from "./Admin/AdminLayout";
+import AdminDashboard from "./Admin/AdminDashboard";
+import AdminProducts from "./Admin/AdminProducts";
+import AdminOrders from "./Admin/AdminOrders";
+import AdminUsers from "./Admin/AdminUsers";
+import AdminCategories from "./Admin/AdminCategories";
+import AdminReviews from "./Admin/AdminReviews";
+import AdminPayments from "./Admin/AdminPayments";
+import AdminDelivery from "./Admin/AdminDelivery";
+import AdminSettings from "./Admin/AdminSettings";
+
 export default function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Loginpage />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Profil" element={<Profil />} />
@@ -29,6 +41,19 @@ export default function App() {
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/Xaridlarim" element={<Xaridlarim />} />
         <Route path="/Savatcha" element={<Savatcha />} />
+        
+        {/* Admin routes */}
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="products" element={<AdminProducts />} />
+          <Route path="orders" element={<AdminOrders />} />
+          <Route path="users" element={<AdminUsers />} />
+          <Route path="categories" element={<AdminCategories />} />
+          <Route path="reviews" element={<AdminReviews />} />
+          <Route path="payments" element={<AdminPayments />} />
+          <Route path="delivery" element={<AdminDelivery />} />
+          <Route path="settings" element={<AdminSettings />} />
+        </Route>
       </Routes>
     </div>
   );

@@ -51,7 +51,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Body scroll lock when drawer open
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -60,10 +59,8 @@ export default function Navbar() {
     }
     return () => { document.body.style.overflow = ""; };
   }, [mobileMenuOpen]);
-
   return (
     <>
-      {/* ─── DESKTOP ─── */}
       <div className="hidden md:block">
 
         {/* Topbar */}
@@ -92,7 +89,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Main Navbar */}
         <div className="flex items-center px-10 h-20 border-b border-gray-200">
 
           <img src="/takbir.png" alt="Logo" className="h-[50px]" />
@@ -158,11 +154,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ─── MOBILE ─── */}
       <div className="md:hidden sticky top-0 bg-white shadow-sm z-50">
 
         <div className="flex items-center justify-between px-4 py-2">
-          {/* Hamburger button */}
           <button
             onClick={() => setMobileMenuOpen(true)}
             className="p-1 rounded-md hover:bg-gray-100 transition-colors"
@@ -191,8 +185,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ─── LEFT DRAWER OVERLAY ─── */}
-      {/* Backdrop */}
       <div
         onClick={() => setMobileMenuOpen(false)}
         className={`
@@ -202,7 +194,6 @@ export default function Navbar() {
         `}
       />
 
-      {/* Drawer Panel */}
       <div
         className={`
           fixed top-0 left-0 h-full w-[280px] bg-white z-[101] md:hidden
